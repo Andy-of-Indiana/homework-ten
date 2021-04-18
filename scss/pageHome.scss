@@ -1,0 +1,287 @@
+.homeBG {
+  height: 500px;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, $overlayBlack, $overlayBlack),
+    url(../assets/images/hero.jpg);
+
+  .homeTitle {
+    height: 245px;
+    max-width: 675px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: $white;
+  }
+  .homeTitle h1 {
+    font-size: $titleFont60;
+    font-family: proxNovaLight;
+  }
+  .homeTitle p {
+    font-size: $mainFont21;
+    font-family: $mainType;
+  }
+}
+
+.homeBookingLinks {
+  min-height: 300px;
+  max-width: 64%;
+  margin: -50px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .homeTour {
+    height: 300px;
+    width: 240px;
+    text-align: center;
+    color: $white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .homeTour h1 {
+    font-size: $titleFont45;
+    font-family: proxNovaLight;
+    margin-top: 50px;
+  }
+  .homeTour h2 {
+    font-size: $titleFont25;
+    font-family: proxNovaLight;
+    margin-top: -16px;
+    margin-bottom: 62px;
+  }
+  .img1 {
+    background-image: linear-gradient(to bottom, $overlayBlack, $overlayBlack),
+      url(../assets/images/tour-01.jpg);
+  }
+  .img2 {
+    background-image: linear-gradient(to bottom, $overlayBlack, $overlayBlack),
+      url(../assets/images/tour-02.jpg);
+  }
+  .img3 {
+    background-image: linear-gradient(to bottom, $overlayBlack, $overlayBlack),
+      url(../assets/images/tour-03.jpg);
+  }
+}
+
+.homeContent {
+  min-height: 900px;
+  width: 100%;
+  margin-top: 40px;
+
+  .bookingForm {
+    min-height: 730px;
+    width: auto;
+  }
+  .bookingForm h1 {
+    font-size: $titleFont60;
+    font-family: proxNovaLight;
+    margin-bottom: 30px;
+  }
+
+  .bookingFormInfo {
+    height: 140px;
+    width: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .bookingFormInfoRow {
+      height: 60px;
+      width: auto;
+      display: flex;
+      justify-content: space-between;
+
+      .textBoxSmall {
+        height: auto;
+        width: 42%;
+        border: 1px $blue solid;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+      }
+      .textBoxSmall p {
+        font-size: $mainFont21;
+        font-family: $mainType;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      .textBoxLarge {
+        height: auto;
+        width: 56%;
+        border: 1px $blue solid;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+      }
+      .textBoxLarge p {
+        font-size: $mainFont21;
+        font-family: $mainType;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .bookingFormCheck {
+    height: 140px;
+    width: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .bookingFormCheckRow {
+      height: 60px;
+      width: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .textBoxOuter {
+      height: auto;
+      width: 130px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+    }
+    .textBoxOuter p {
+      font-size: $mainFont21;
+      font-family: $mainType;
+      margin-top: 10px;
+      margin-left: 20px;
+      text-overflow: ellipsis;
+    }
+    .textBoxCheck {
+      height: auto;
+      width: 85%;
+      border: 1px $blue solid;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .textBoxCheck p {
+      font-size: $mainFont21;
+      font-family: $mainType;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    .calender {
+      height: 20px;
+      width: 20px;
+      margin-right: 20px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/calendar.svg);
+    }
+  }
+
+  .bookingFormQuanity {
+    min-height: 60px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .bookingFormQuanityCol {
+      height: auto;
+      width: 136px;
+    }
+    .textBoxOuterTwo {
+      height: auto;
+      width: auto;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+    }
+    .textBoxOuterTwo p {
+      font-size: $mainFont21;
+      font-family: $mainType;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    .textBoxQuanity {
+      height: auto;
+      width: 75%;
+      border: 1px $blue solid;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .textBoxQuanity p {
+      font-size: $mainFont21;
+      font-family: $mainType;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    .dropDown {
+      height: 10px;
+      width: 20px;
+      margin-right: 10px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/down-arrow.svg);
+    }
+  }
+  .bookingFormMessage {
+    height: 200px;
+    width: auto;
+    border: 1px $blue solid;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .bookingFormMessage p {
+    font-size: $mainFont21;
+    font-family: $mainType;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 918px) {
+  .homeBG {
+    height: 600px;
+    .homeTitle {
+      margin-bottom: 20px;
+      .bookingFormQuanityCol {
+        height: auto;
+        width: 136px;
+      }
+    }
+  }
+  .homeContent {
+    margin-bottom: 125px;
+    .bookingFormQuanity {
+      max-width: 275px;
+      flex-wrap: wrap;
+      .bookingFormQuanityCol {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1145px) {
+  .homeBookingLinks {
+    width: 240px;
+    flex-direction: center;
+    padding-left: 0;
+    padding-right: 0;
+
+    .homeTour {
+      margin-bottom: 30px;
+    }
+  }
+}
+@font-face {
+  font-family: proxNovaLight;
+  src: url(../assets/fonts/Proxima-Nova-Thin.ttf);
+}

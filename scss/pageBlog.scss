@@ -1,0 +1,98 @@
+.blogContent {
+  min-height: 1100px;
+  width: 100%;
+  display: flex;
+
+  .blog {
+    min-height: 950px;
+    width: auto;
+    margin-top: 55px;
+
+    .blogTitle {
+      height: 60px;
+      width: 200px;
+      position: relative;
+    }
+    .blogTitle h2 {
+      font-size: $titleFont45;
+      font-family: proxNovaLight;
+      color: $black;
+    }
+    .blogGallery {
+      min-height: 860px;
+      width: 100%;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .blogBox {
+        min-height: 380px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .dateBox {
+          height: 60px;
+          width: 60px;
+          background-color: $blue;
+
+          .dateWords {
+            text-align: center;
+            font-family: $mainType;
+            color: $white;
+          }
+          .dateWords h3 {
+            font-size: 25px;
+            margin-top: 3px;
+            margin-bottom: 0px;
+          }
+          .dateWords p {
+            font-size: $mainFont19;
+          }
+        }
+        .blogBoxContent {
+          height: auto;
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .blogBoxImage {
+            height: 250px;
+            width: auto;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(../assets/images/blog.jpg);
+          }
+          .blogBoxWords {
+            min-height: 100px;
+            max-width: 500px;
+            font-family: $mainType;
+          }
+          .blogBoxWords h3 {
+            color: $black;
+            font-size: $mainFont19;
+          }
+          .blogBoxWords p {
+            color: $blue;
+            font-size: $mainFont19;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 825px) {
+  .blogBox {
+    height: 500px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+
+    .dateBox {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  }
+}

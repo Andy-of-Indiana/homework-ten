@@ -1,0 +1,165 @@
+.tourBG {
+  height: 250px;
+  width: auto;
+
+  .tourImage {
+    height: 200px;
+    max-width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, $overlayBlack, $overlayBlack),
+      url(../assets/images/tours-header.jpg);
+  }
+  .tourImage h1 {
+    font-size: $titleFont60;
+    font-family: proxNovaLight;
+    color: $white;
+    margin-top: 50px;
+  }
+}
+.toursContent {
+  min-height: 1100px;
+  width: auto;
+
+  .tourGallery {
+    min-height: 1000px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .tourRow {
+      min-height: 300px;
+      width: auto;
+      display: flex;
+      justify-content: space-between;
+
+      .tour {
+        height: 300px;
+        width: 240px;
+        text-align: center;
+        color: $white;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .tour h1 {
+        font-size: $titleFont45;
+        font-family: proxNovaLight;
+        margin-top: 50px;
+      }
+      .tour h2 {
+        font-size: $titleFont25;
+        font-family: proxNovaLight;
+        margin-top: -16px;
+        margin-bottom: 62px;
+      }
+      .tour h3 {
+        font-size: 40px;
+        font-family: proxNovaLight;
+        margin-top: 50px;
+        margin-bottom: 21px;
+      }
+      .img1 {
+        background-image: linear-gradient(
+            to bottom,
+            $overlayBlack,
+            $overlayBlack
+          ),
+          url(../assets/images/tour-01.jpg);
+      }
+      .img2 {
+        background-image: linear-gradient(
+            to bottom,
+            $overlayBlack,
+            $overlayBlack
+          ),
+          url(../assets/images/tour-02.jpg);
+      }
+      .img3 {
+        background-image: linear-gradient(
+            to bottom,
+            $overlayBlack,
+            $overlayBlack
+          ),
+          url(../assets/images/tour-03.jpg);
+      }
+      .img4 {
+        background-image: linear-gradient(
+            to bottom,
+            $overlayBlack,
+            $overlayBlack
+          ),
+          url(../assets/images/tour-04.jpg);
+      }
+      .img5 {
+        background-image: linear-gradient(
+            to bottom,
+            $overlayBlack,
+            $overlayBlack
+          ),
+          url(../assets/images/tour-05.jpg);
+      }
+      .img6 {
+        background-image: linear-gradient(
+            to bottom,
+            $overlayBlack,
+            $overlayBlack
+          ),
+          url(../assets/images/tour-06.jpg);
+      }
+      .img7 {
+        background-image: linear-gradient(
+            to bottom,
+            $overlayBlack,
+            $overlayBlack
+          ),
+          url(../assets/images/tour-07.jpg);
+      }
+      .img8 {
+        background-image: linear-gradient(
+            to bottom,
+            $overlayBlack,
+            $overlayBlack
+          ),
+          url(../assets/images/tour-08.jpg);
+      }
+      .img9 {
+        background-image: linear-gradient(
+            to bottom,
+            $overlayBlack,
+            $overlayBlack
+          ),
+          url(../assets/images/tour-09.jpg);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1145px) {
+  .toursContent {
+    .tourGallery {
+      width: 240px;
+      flex-direction: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+
+      .tourRow {
+        width: 240px;
+        flex-direction: center;
+        flex-wrap: wrap;
+
+        .tour {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+@font-face {
+  font-family: proxNovaLight;
+  src: url(../assets/fonts/Proxima-Nova-Thin.ttf);
+}

@@ -1,0 +1,107 @@
+.logo {
+  height: 63px;
+  width: 140px;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.innerBinding {
+  height: auto;
+  width: 64%;
+  margin: 0 auto;
+}
+.outerBinding {
+  height: auto;
+  width: 77%;
+  margin: 0 auto;
+}
+.titleLine {
+  height: 2px;
+  width: 70%;
+  background-color: $black;
+  bottom: 0;
+  position: absolute;
+}
+
+.footer {
+  min-height: 100px;
+  width: 100%;
+  background-color: $blue;
+}
+.bottom {
+  height: auto;
+  width: 77%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.sideBottom {
+  height: auto;
+  width: 200px;
+
+  .socialMedia {
+    height: 30px;
+    width: 140px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+
+    .facebook {
+      height: 30px;
+      width: 30px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/facebook.png);
+    }
+    .instagram {
+      height: 30px;
+      width: 30px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/instagram.png);
+    }
+    .twitter {
+      height: 30px;
+      width: 30px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/twitter.png);
+    }
+  }
+}
+.bottomText {
+  height: auto;
+  width: 60%;
+  text-align: center;
+  margin-top: 40px;
+}
+.bottomText p {
+  font-size: $mainFont21;
+  font-family: $mainType;
+  color: $white;
+}
+
+@media only screen and (max-width: 950px) {
+  .logo {
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  .footer {
+    height: 250px;
+  }
+  .bottom {
+    margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .socialMedia {
+    margin: 0 auto;
+  }
+  .bottomText {
+    width: 80%;
+  }
+}

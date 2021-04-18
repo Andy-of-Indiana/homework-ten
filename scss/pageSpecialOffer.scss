@@ -1,0 +1,106 @@
+.specialOfferContent {
+  min-height: 900px;
+  width: 100%;
+  display: flex;
+
+  .specialOffers {
+    min-height: 725px;
+    width: auto;
+    margin-top: 55px;
+
+    .specialOffersTitle {
+      height: 60px;
+      width: 400px;
+      position: relative;
+    }
+    .specialOffersTitle h2 {
+      font-size: $titleFont45;
+      font-family: proxNovaLight;
+      color: $black;
+    }
+    .offersContent {
+      min-height: 625px;
+      max-width: 575px;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .offersContentBox {
+        min-height: 275px;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .offerImage {
+          min-height: 275px;
+          width: 200px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .one {
+          background-image: url(../assets/images/special-offer-01.jpg);
+        }
+        .two {
+          background-image: url(../assets/images/special-offer-02.jpg);
+        }
+        .offer {
+          height: 275px;
+          width: 350px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+
+          .offerTitle {
+            height: 50px;
+            width: auto;
+            position: relative;
+          }
+          .offerTitle h3 {
+            font-size: $titleFont35;
+            font-family: proxNovaLight;
+            color: $black;
+          }
+          .offerCost {
+            height: 30px;
+            width: auto;
+            text-align: end;
+          }
+          .offerCost p {
+            font-size: $titleFont25;
+            font-family: proxNovaLight;
+            color: #ff7d38;
+          }
+          .offerWords {
+            height: auto;
+            width: 300px;
+          }
+          .offerWords p {
+            font-size: $mainFont19;
+            font-family: $mainType;
+            color: $black;
+          }
+          .offerCircle {
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 730px) {
+  .offersContent {
+    height: 1250px;
+    margin-bottom: 70px;
+    .offersContentBox {
+      flex-wrap: wrap;
+
+      .offerImage {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

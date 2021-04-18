@@ -1,0 +1,123 @@
+.contactContent {
+  min-height: 900px;
+  width: 100%;
+  display: flex;
+
+  .contatcts {
+    min-height: 750px;
+    width: auto;
+    margin-top: 55px;
+
+    .contactsTitle {
+      height: 60px;
+      width: 300px;
+      position: relative;
+    }
+    .contactsTitle h2 {
+      font-size: $titleFont45;
+      font-family: proxNovaLight;
+      color: $black;
+    }
+    .contactGallery {
+      min-height: 650px;
+      width: 100%;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .contactRowBig {
+        min-height: 440px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .contactMap {
+          height: 440px;
+          width: 412px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-image: url(../assets/images/c9630e6a0d4eea8424c9e77634f917b5.jpg);
+        }
+        .contactForm {
+          height: auto;
+          width: 590px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .contactFromRowSmall {
+            height: 60px;
+            width: auto;
+            background-color: #f5f5f5;
+          }
+          .contactFromRowSmall p {
+            font-size: $mainFont21;
+            font-family: $mainType;
+            color: $black;
+            margin-top: 15px;
+            margin-left: 20px;
+          }
+          .contactFromRowLarge {
+            height: 200px;
+            width: auto;
+            background-color: #f5f5f5;
+          }
+          .contactFromRowLarge p {
+            font-size: $mainFont21;
+            font-family: $mainType;
+            color: $black;
+            margin-top: 15px;
+            margin-left: 20px;
+          }
+        }
+      }
+      .contactRowSmall {
+        min-height: 160px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .contactWords {
+          min-height: 160px;
+          width: 412px;
+        }
+        .contactWords p {
+          font-size: $mainFont21;
+          font-family: $mainType;
+          color: $black;
+        }
+        .contactButton {
+          height: auto;
+          width: 590px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1315px) {
+  .contactRowBig {
+    height: 950px;
+    flex-wrap: wrap;
+
+    .contactMap {
+      margin: 0 auto;
+    }
+    .contactForm {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }
+  .contactRowSmall {
+    min-height: 300px;
+    max-width: 590px;
+    margin: 0 auto;
+
+    .contactWords {
+      width: 590px;
+      margin-bottom: 50px;
+    }
+  }
+}

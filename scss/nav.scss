@@ -1,0 +1,116 @@
+nav {
+  min-height: 100px;
+  width: 77%;
+  margin: 0 auto;
+  background-color: transparent;
+
+  .lineWhite {
+    min-height: 100px;
+    width: 100%;
+    border: 2px;
+    border-style: solid;
+    border-color: transparent transparent $white transparent;
+    display: flex;
+    justify-content: space-between;
+
+    .linksWhite {
+      width: 525px;
+      margin-right: 25px;
+      display: flex;
+      margin-top: 50px;
+      justify-content: space-around;
+      a {
+        font-size: $mainFont21;
+        font-family: $mainType;
+        text-decoration: none;
+        color: $white;
+      }
+      p {
+        font-size: $mainFont21;
+        color: $white;
+      }
+    }
+
+    .whiteLine {
+      min-height: 100px;
+      width: 100%;
+      border: 2px;
+      border-style: solid;
+      border-color: transparent transparent $white transparent;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .linksWhite {
+        width: 525px;
+        margin-right: 25px;
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-around;
+        a {
+          font-size: $mainFont21;
+          font-family: $mainType;
+          text-decoration: none;
+          color: $white;
+        }
+        p {
+          font-size: $mainFont21;
+          color: $white;
+        }
+      }
+    }
+  }
+  .lineBlack {
+    min-height: 100px;
+    width: 100%;
+    border: 2px;
+    border-style: solid;
+    border-color: transparent transparent $black transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .linksBlack {
+      width: 525px;
+      margin-right: 25px;
+      display: flex;
+      margin-top: 50px;
+      justify-content: space-around;
+      a {
+        font-size: $mainFont21;
+        font-family: $mainType;
+        text-decoration: none;
+        color: $black;
+      }
+      p {
+        font-size: $mainFont21;
+        color: $black;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  nav {
+    .lineWhite {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .linksWhite {
+        margin-right: 0;
+        margin: auto;
+        margin-top: 20px;
+      }
+    }
+    .lineBlack {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .linksBlack {
+        margin-right: 0;
+        margin: auto;
+        margin-top: 20px;
+      }
+    }
+  }
+}

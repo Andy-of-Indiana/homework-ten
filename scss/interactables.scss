@@ -1,0 +1,70 @@
+.buttonSquare {
+  height: 40px;
+  width: 120px;
+  background: $blue;
+  margin: 0 auto;
+
+  a {
+    font-size: $mainFont19;
+    font-family: $mainType;
+    color: $white;
+    text-decoration: none;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.buttonSquareContact {
+  height: 40px;
+  width: 175px;
+  background: $blue;
+
+  a {
+    font-size: $mainFont19;
+    font-family: $mainType;
+    color: $white;
+    text-decoration: none;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.circleButton {
+  height: 40px;
+  width: 120px;
+  background: $blue;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+  a {
+    font-size: $mainFont19;
+    font-family: $mainType;
+    color: $white;
+    text-decoration: none;
+  }
+}
+.buttonLargeCircle {
+  height: 60px;
+  width: auto;
+  background: $blue;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  font-size: $mainFont19;
+  font-family: $mainType;
+  color: $white;
+  a {
+    font-size: $mainFont19;
+    font-family: $mainType;
+    color: $white;
+    text-decoration: none;
+  }
+}

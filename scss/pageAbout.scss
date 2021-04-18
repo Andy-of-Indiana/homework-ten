@@ -1,0 +1,124 @@
+.aboutContent {
+  min-height: 950px;
+  width: 100%;
+  display: flex;
+
+  .about {
+    min-height: 220px;
+    width: auto;
+    margin-top: 90px;
+
+    .aboutTitle {
+      height: 80px;
+      width: 225px;
+      position: relative;
+    }
+    .aboutTitle h1 {
+      font-size: $titleFont60;
+      font-family: proxNovaLight;
+      color: $black;
+    }
+    .aboutWords {
+      min-height: 100px;
+      width: auto;
+      margin-top: 40px;
+    }
+    .aboutWords p {
+      font-size: $mainFont19;
+      font-family: $mainType;
+      color: $black;
+    }
+  }
+
+  .clientQuotes {
+    min-height: 450px;
+    max-width: 750px;
+    margin-top: 100px;
+    position: relative;
+
+    .clientQuotesTitle {
+      height: 60px;
+      width: 350px;
+      position: relative;
+    }
+    .clientQuotesTitle h2 {
+      font-size: $titleFont45;
+      font-family: proxNovaLight;
+      color: $black;
+    }
+
+    .clientQuotesContent {
+      min-height: 350px;
+      width: auto;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .clientQuotesBox {
+        min-height: 150px;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .clientImage {
+          height: 150px;
+          width: 260px;
+          display: flex;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .one {
+          background-image: url(../assets/images/about-client-01.jpg);
+        }
+        .two {
+          background-image: url(../assets/images/about-client-02.jpg);
+        }
+        .client {
+          min-height: 150px;
+          max-width: 470px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .clientWords {
+            height: 120px;
+            width: auto;
+          }
+          .clientWords p {
+            font-size: $mainFont19;
+            font-family: $mainType;
+            color: $black;
+          }
+          .clientName {
+            min-height: 30px;
+            width: auto;
+            text-align: end;
+          }
+          .clientName p {
+            font-size: $titleFont25;
+            font-family: proxNovaLight;
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 965px) {
+  .clientQuotesContent {
+    height: 700px;
+    margin-bottom: 40px;
+
+    .clientQuotesBox {
+      height: 350px;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+}
+@font-face {
+  font-family: proxNovaLight;
+  src: url(../assets/fonts/Proxima-Nova-Thin.ttf);
+}
